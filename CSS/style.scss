@@ -56,37 +56,74 @@ nav{
 
 .hero-section{
     height: 700px;
-    background-position: center;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background: url(../Images/banner.jpg);
-    .col-lg-6{
-        min-height: 700px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        .form_box{
-            background: #ffffff;
-            min-height: 500px;
-            padding: 40px 0px;
-            h2{
-                text-align: center;
-                font-family: roboto_regular;
-                font-size: 38px;
-                text-transform: uppercase;
-            }
-            input{
-                padding: 5px 10px;
-            }
-            button{
-                background: #c5ad85;
-                padding: 6px 24px;
-                border: none;
-                color: #ffffff;
-                text-transform: uppercase;
+    .container{
+        height: 100%;
+        .row{
+            height: 100%;
+            .col-12{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h1{
+                    font-family: roboto_light;
+                    font-size: 52px;
+                    color: #ffff;
+                    text-transform: uppercase;
+                    @media (max-width:746px) {
+                        font-family: roboto_light;
+                    font-size: 32px;
+                    color: #ffff;
+                    text-transform: uppercase;
+                    }
+                }
+                span{
+                    font-family: roboto_light;
+                    font-size: 42px;
+                    color: #ffffff;
+                    @media (max-width:746px) {
+                        font-family: roboto_light;
+                        font-size: 28px;
+                        color: #ffffff;
+                    }
+                }
+                ul{
+                    @media (max-width:746px) {
+                        padding: 0px;
+                    }
+                    li{
+                        list-style: none;
+                        font-family: roboto_light;
+                        font-size: 22px;
+                        color: #ffffff;
+                        @media (max-width:746px) {
+                            list-style: none;
+                            font-family: roboto_light;
+                            font-size: 16px;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                button{
+                    background-color: #c5ad85;
+                    padding: 5px 20px;
+                    width: fit-content;
+                    border: none;
+                    a{
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-family: roboto_regular;
+                        color: #ffffff;
+                    }
+                }
             }
         }
-    }  
+        
+    } 
 }
 
 .about{
@@ -96,12 +133,14 @@ nav{
         justify-content: center;
         flex-direction: column;
         height: 100%;
+        padding: 20px 0px;
     }
     .left{
         display: flex;
         justify-content: center;
         flex-direction: column;
         height: 100%;
+        padding: 20px 0px;
     }
     .col-box{
         margin: 0px 5px;
@@ -147,7 +186,7 @@ nav{
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .engineer{
+    .landscape{
         background: url(../Images/service3.jpg);
         height: 350px;
         background-repeat: no-repeat;
@@ -186,6 +225,9 @@ nav{
 
 .team{
     padding: 40px 0px;
+    .col-lg-4{
+        padding: 20px 10px;
+    }
     button{
         background-color: #c5ad85;
         padding: 5px 16px;
@@ -228,6 +270,39 @@ nav{
        width: 100%;
        height: auto;
     }
+}
+
+.location{
+    .col-lg-6{
+        padding: 0px;
+    }
+    .for{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .form_box{
+            background: #282e3e;
+            padding: 40px 0px;
+            h2{
+                text-align: center;
+                font-family: roboto_regular;
+                font-size: 38px;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+            input{
+                padding: 8px 10px;
+                border: 1px solid #ffffff;
+            }
+            button{
+                background: #c5ad85;
+                padding: 6px 24px;
+                border: none;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+        }
+    }  
 }
 
 .foot{

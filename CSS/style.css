@@ -50,37 +50,80 @@ nav button a {
 
 .hero-section {
   height: 700px;
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background: url(../Images/banner.jpg);
 }
-.hero-section .col-lg-6 {
-  min-height: 700px;
+.hero-section .container {
+  height: 100%;
+}
+.hero-section .container .row {
+  height: 100%;
+}
+.hero-section .container .row .col-12 {
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.hero-section .col-lg-6 .form_box {
-  background: #ffffff;
-  min-height: 500px;
-  padding: 40px 0px;
-}
-.hero-section .col-lg-6 .form_box h2 {
-  text-align: center;
-  font-family: roboto_regular;
-  font-size: 38px;
+.hero-section .container .row .col-12 h1 {
+  font-family: roboto_light;
+  font-size: 52px;
+  color: white;
   text-transform: uppercase;
 }
-.hero-section .col-lg-6 .form_box input {
-  padding: 5px 10px;
+@media (max-width: 746px) {
+  .hero-section .container .row .col-12 h1 {
+    font-family: roboto_light;
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+  }
 }
-.hero-section .col-lg-6 .form_box button {
-  background: #c5ad85;
-  padding: 6px 24px;
-  border: none;
+.hero-section .container .row .col-12 span {
+  font-family: roboto_light;
+  font-size: 42px;
   color: #ffffff;
-  text-transform: uppercase;
+}
+@media (max-width: 746px) {
+  .hero-section .container .row .col-12 span {
+    font-family: roboto_light;
+    font-size: 28px;
+    color: #ffffff;
+  }
+}
+@media (max-width: 746px) {
+  .hero-section .container .row .col-12 ul {
+    padding: 0px;
+  }
+}
+.hero-section .container .row .col-12 ul li {
+  list-style: none;
+  font-family: roboto_light;
+  font-size: 22px;
+  color: #ffffff;
+}
+@media (max-width: 746px) {
+  .hero-section .container .row .col-12 ul li {
+    list-style: none;
+    font-family: roboto_light;
+    font-size: 16px;
+    color: #ffffff;
+  }
+}
+.hero-section .container .row .col-12 button {
+  background-color: #c5ad85;
+  padding: 5px 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+.hero-section .container .row .col-12 button a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: roboto_regular;
+  color: #ffffff;
 }
 
 .about {
@@ -91,12 +134,14 @@ nav button a {
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  padding: 20px 0px;
 }
 .about .left {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  padding: 20px 0px;
 }
 .about .col-box {
   margin: 0px 5px;
@@ -143,7 +188,7 @@ nav button a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.services .engineer {
+.services .landscape {
   background: url(../Images/service3.jpg);
   height: 350px;
   background-repeat: no-repeat;
@@ -181,6 +226,9 @@ nav button a {
 
 .team {
   padding: 40px 0px;
+}
+.team .col-lg-4 {
+  padding: 20px 10px;
 }
 .team button {
   background-color: #c5ad85;
@@ -224,6 +272,37 @@ nav button a {
 .team img {
   width: 100%;
   height: auto;
+}
+
+.location .col-lg-6 {
+  padding: 0px;
+}
+.location .for {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.location .for .form_box {
+  background: #282e3e;
+  padding: 40px 0px;
+}
+.location .for .form_box h2 {
+  text-align: center;
+  font-family: roboto_regular;
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.location .for .form_box input {
+  padding: 8px 10px;
+  border: 1px solid #ffffff;
+}
+.location .for .form_box button {
+  background: #c5ad85;
+  padding: 6px 24px;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .foot {
