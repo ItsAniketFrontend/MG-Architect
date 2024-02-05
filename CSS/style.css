@@ -53,6 +53,7 @@ nav button a {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   background: url(../Images/banner.jpg);
 }
 .hero-section .container {
@@ -128,6 +129,7 @@ nav button a {
 
 .about {
   padding: 40px 0px;
+  overflow: hidden;
 }
 .about .right {
   display: flex;
@@ -174,6 +176,7 @@ nav button a {
 }
 
 .services {
+  overflow: hidden;
   padding: 40px 0px;
 }
 .services .architect {
@@ -215,6 +218,7 @@ nav button a {
 }
 
 .portfolio {
+  overflow: hidden;
   padding: 40px 0px;
 }
 .portfolio h2 {
@@ -225,6 +229,7 @@ nav button a {
 }
 
 .team {
+  overflow: hidden;
   padding: 40px 0px;
 }
 .team .col-lg-4 {

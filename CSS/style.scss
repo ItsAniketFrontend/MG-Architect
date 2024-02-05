@@ -59,6 +59,7 @@ nav{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     background: url(../Images/banner.jpg);
     .container{
         height: 100%;
@@ -128,6 +129,7 @@ nav{
 
 .about{
     padding: 40px 0px;
+    overflow: hidden;
     .right{
         display: flex;
         justify-content: center;
@@ -173,6 +175,7 @@ nav{
 }
 
 .services{
+    overflow: hidden;
     padding: 40px 0px;
     .architect{
         background: url(../Images/service.jpg);
@@ -214,6 +217,7 @@ nav{
 }
 
 .portfolio{
+    overflow: hidden;
     padding: 40px 0px;
     h2{
         font-family: roboto_extralight;
@@ -224,6 +228,7 @@ nav{
 }
 
 .team{
+    overflow: hidden;
     padding: 40px 0px;
     .col-lg-4{
         padding: 20px 10px;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MG-Architect</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
@@ -81,7 +82,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-12 col-xl-4">
-                        <div class="col-box right">
+                        <div class="col-box right" data-aos="fade-down" data-aos-delay="200" data-aos-duration="800">
                             <h1>Welcome</h1>
                             <h3>SECRET OF SUCCESS
                                 OF OUR PROJECTS</h3>
@@ -93,7 +94,7 @@
                             <img src="Images/about.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-4 col-12 col-xl-4">
+                    <div class="col-lg-4 col-12 col-xl-4" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
                         <div class="col-box left">
                             <p>Since 1987 I was involved in thousands of commercial projects, doing the design of skyscrapers, creating retail and commercial interiors and corporate marketing centers. An equally important aspect of my work is single and family residential design. The award winning practice is published in professional and shelter publications and widely recognized for design. Today I am a successful architect ready to do work.</p>
                         </div>
@@ -106,22 +107,22 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 architect">
-                        <div class="col-box">
+                        <div class="col-box" data-aos="fade-down" data-aos-delay="200" data-aos-duration="800">
                             <span>Architecture</span>
                         </div>
                     </div>
                     <div class="col-12 interior">
-                        <div class="col-box">
+                        <div class="col-box" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                             <span>Interior Design</span>
                         </div>
                     </div>
                     <div class="col-12 landscape">
-                        <div class="col-box">
+                        <div class="col-box" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
                             <span>Landscape</span>
                         </div>
                     </div>
                     <div class="col-12 management">
-                        <div class="col-box">
+                        <div class="col-box" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
                             <span>Project Management</span>
                         </div>
                     </div>
@@ -132,7 +133,7 @@
         <section class="portfolio" id="portfolio">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-center" data-aos="fade-down" data-aos-duration="700" data-aos-delay="200">
                         <h2>Recent Projects</h2>
                     </div>
                     <div class="col-lg-3 p-0">
@@ -161,19 +162,19 @@
         <section class="team" id="team">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-12">
+                    <div class="col-lg-4 col-12" data-aos-delay="250" data-aos-duration="800" data-aos="fade-right">
                         <div class="left-box">
                             <span>TEAM</span>
                             <h1>Our <span>Architects</span></h1>
                             <button><a href="#contact">Get In Touch</a></button>
                         </div>   
                     </div>
-                    <div class="col-lg-4 col-12">
+                    <div class="col-lg-4 col-12" data-aos-delay="250" data-aos-duration="800" data-aos="fade-top">
                         <img src="Images/team1.jpg"  alt="">
                         <h3>ADAM THOMSON</h3>
                         <p>His career started in the late 80s, when it wasn’t so easy to implement creative ideas, as it is today. Adam has his own unique vision of architecture.</p>
                     </div>
-                    <div class="col-lg-4 col-12">   
+                    <div class="col-lg-4 col-12" data-aos-delay="250" data-aos-duration="800" data-aos="fade-left">   
                         <img src="Images/team2.jpg"  alt="">
                         <h3>PERRY MAVERICK</h3>
                         <p>Perry is the most creative architect in the company, involved in many commercial projects, as well as in building exclusive wooden family homes.</p>
@@ -226,6 +227,12 @@
             </div>
         </section>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
