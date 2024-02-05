@@ -94,6 +94,9 @@ nav button a {
     color: #ffffff;
   }
 }
+.hero-section .container .row .col-12 ul {
+  padding: 0px;
+}
 @media (max-width: 746px) {
   .hero-section .container .row .col-12 ul {
     padding: 0px;
